@@ -10,11 +10,9 @@ import com.jme3.math.ColorRGBA;
 
  @author Alex Cham также известный как Jcrypto
  */
-public class MaterialManager
-{
+public class MaterialManager {
 
-    public MaterialManager()
-    {
+    public MaterialManager() {
     }
 
 

@@ -84,16 +84,5 @@ public class AvatarBodyMoveControl extends AbstractControl
         }
         physicBody.setWalkDirection(walkDirection);//Critical
 
-
-
-        //Избегайте вибрации
-        spatial.setLocalTranslation(physicBody.getPhysicsLocation());
-        //Соответствующие преобразования Узла
-        spatial.getControl(BetterCharacterControl.class).warp(physicBody.getPhysicsLocation());
-        //Повернём узел в соответствии с камерой
-        spatial.getControl(
-                BetterCharacterControl.class).setViewDirection(
-                cam.getDirection().negate());
-
     }
 }

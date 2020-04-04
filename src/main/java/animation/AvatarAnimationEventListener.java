@@ -10,12 +10,6 @@ import com.jme3.bullet.objects.PhysicsCharacter;
 import com.jme3.scene.Spatial;
 import player.listeners.PlayerInputActionListener;
 
-/*
- Следящая камера (также известная как камера от 3-его лица) пример
- Основанный на официальном TestQ3.java
-
- @author Alex Cham также известный как Jcrypto
- */
 public class AvatarAnimationEventListener extends AbstractAppState implements AnimEventListener
 {
 
@@ -51,13 +45,13 @@ public class AvatarAnimationEventListener extends AbstractAppState implements An
     public void onAnimCycleDone(AnimControl control, AnimChannel channel, String animName)
     {
         //throw new UnsupportedOperationException("Not supported yet.");
-        //Чтобы изменить тело сгенерированных методов, выберите Сервис | Шаблоны.
+        //????? ???????? ???? ??????????????? ???????, ???????? ?????? | ???????.
     }
 
     public void onAnimChange(AnimControl control, AnimChannel channel, String animName)
     {
         //throw new UnsupportedOperationException("Not supported yet.");
-        //Чтобы изменить тело сгенерированных методов, выберите Сервис | Шаблоны.
+        //????? ???????? ???? ??????????????? ???????, ???????? ?????? | ???????.
 
     }
 

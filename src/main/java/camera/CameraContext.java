@@ -40,7 +40,7 @@ public class CameraContext extends AbstractAppState {
      конструктор то вам нужно прикрепить камеру к spatial после того как вы сделаете
      spatial.addControl(chaseCamera);
      */
-    private final ChaseCamera chaseCam;
+    //private final ChaseCamera chaseCam;
     private final FlyByCamera flyByCam;
 
     public CameraContext(AppSettings settings, InputManager inputManager,
@@ -54,7 +54,8 @@ public class CameraContext extends AbstractAppState {
         this.cam = cam;
         assert (flyByCam != null);
         this.flyByCam = flyByCam;
-        this.chaseCam = new ChaseCamera(this.cam, this.inputManager);
+
+        //this.chaseCam = new ChaseCamera(this.cam, this.inputManager);
     }
 
     @Override
@@ -63,9 +64,9 @@ public class CameraContext extends AbstractAppState {
         //TODO: инициализируйте ваш AppState, например. присоедините spatial-ы к rootNode
         //это вызывается в потоке OpenGL после присоединения AppState
 
-        this.cam.setFrustumPerspective(116.0f, (settings.getWidth() / settings.getHeight()), 1.0f, 2000.0f);
-        //this.flyByCam.setMoveSpeed(100);
-        this.flyByCam.setEnabled(false);
+        //this.cam.setFrustumPerspective(116.0f, (settings.getWidth() / settings.getHeight()), 1.0f, 2000.0f);
+        this.flyByCam.setMoveSpeed(0);
+        this.flyByCam.setEnabled(true);
     }
 
     /**
@@ -79,8 +80,8 @@ public class CameraContext extends AbstractAppState {
     /**
      @return chaseCam(следящая камера)
      */
-    public ChaseCamera getChaseCam()
-    {
-        return chaseCam;
-    }
+//    public ChaseCamera getChaseCam()
+//    {
+//        return chaseCam;
+//    }
 }

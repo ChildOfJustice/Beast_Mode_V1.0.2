@@ -6,12 +6,6 @@ import com.jme3.bullet.objects.PhysicsCharacter;
 import com.jme3.math.Vector3f;
 import player.AvatarConstants;
 
-/*
- Следящая камера (также известная как камера от 3-его лица) пример
- Основанный на официальном TestQ3.java
-
- @author Alex Cham также известный как Jcrypto
- */
 public class AvatarAnimationHelper
 {
 
@@ -51,7 +45,7 @@ public class AvatarAnimationHelper
             return false;
         }
         //throw new UnsupportedOperationException("Not supported yet.");
-        //Чтобы изменить тело сгенерированных методов, выберите Сервис | Шаблоны.
+
     }
 
     public boolean backward(boolean pressed)
