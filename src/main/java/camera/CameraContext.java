@@ -65,7 +65,7 @@ public class CameraContext extends AbstractAppState {
         //это вызывается в потоке OpenGL после присоединения AppState
 
         //this.cam.setFrustumPerspective(116.0f, (settings.getWidth() / settings.getHeight()), 1.0f, 2000.0f);
-        this.flyByCam.setMoveSpeed(0);
+        this.flyByCam.setMoveSpeed(50);
         this.flyByCam.setEnabled(true);
     }
 
