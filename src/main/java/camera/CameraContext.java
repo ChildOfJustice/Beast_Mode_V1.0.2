@@ -28,7 +28,7 @@ public class CameraContext extends AbstractAppState {
      Начальное местоположение в (0f, 0f, 10f).
      Начальное направление взгляда в начло координат.
      */
-    private final Camera cam;
+    public final Camera cam;
     /*
      http://javadoc.jmonkeyengine.org/com/jme3/input/ChaseCamera.html
      public class ChaseCamera
@@ -41,7 +41,7 @@ public class CameraContext extends AbstractAppState {
      spatial.addControl(chaseCamera);
      */
     //private final ChaseCamera chaseCam;
-    private final FlyByCamera flyByCam;
+    public final FlyByCamera flyByCam;
 
     public CameraContext(AppSettings settings, InputManager inputManager,
                          Camera cam, FlyByCamera flyByCam) {
@@ -65,17 +65,14 @@ public class CameraContext extends AbstractAppState {
         //это вызывается в потоке OpenGL после присоединения AppState
 
         //this.cam.setFrustumPerspective(116.0f, (settings.getWidth() / settings.getHeight()), 1.0f, 2000.0f);
-        this.flyByCam.setMoveSpeed(50);
+        this.flyByCam.setMoveSpeed(0);
         this.flyByCam.setEnabled(true);
     }
 
     /**
      @return  cam(камера)
      */
-    public Camera getCam()
-    {
-        return cam;
-    }
+
 
     /**
      @return chaseCam(следящая камера)

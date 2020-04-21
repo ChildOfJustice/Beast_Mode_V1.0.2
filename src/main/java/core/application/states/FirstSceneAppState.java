@@ -78,7 +78,7 @@ public class FirstSceneAppState extends AbstractApplicationState  implements Act
         super.update(tpf);
 
         //currentPlayer.gravitation(tpf, map.spatial);
-        //currentPlayer.move(tpf);
+        currentPlayer.move(tpf);
 
         Map.enableVisibleMap((int)currentPlayer.actualObject.pivot.getLocalTranslation().x - (int)initialX, (int)currentPlayer.actualObject.pivot.getLocalTranslation().z - (int)initialY);
     }

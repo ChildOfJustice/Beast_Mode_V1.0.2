@@ -1,6 +1,7 @@
 package elements;
 
 import com.jme3.material.Material;
+import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
 import core.application.AbstractApplicationState;
 
@@ -18,7 +19,6 @@ public class Model extends WorldObject {
 
 
         pivot = new Node("MODEL");
-        System.out.println("AAx1");
         appState.globalRootNode.attachChild(pivot);
         pivot.attachChild(spatial);
         pivot.move(x, y, z);
